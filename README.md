@@ -42,5 +42,5 @@ cd WIH3003_UM
 ## Execute
 
 1. Store the dataset in Hadoop Distributed File System (HDFS).
-2. For Hadoop, execute the `jar` file in the respective folder.
+2. For Hadoop, compile the `java` file in the respective folder into a `jar` file, then execute it on the dataset.
 3. For Spark, go into the `spark` CLI, copy the `spark` file in the respective folder and execute the commands line by line.
