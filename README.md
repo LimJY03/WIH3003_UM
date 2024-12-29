@@ -18,7 +18,7 @@ Those built jobs will process the input file and store the output in another fil
 
 To evaluate the efficiency, we employ metrics such as execution time, throughput, and memory consumption.
 
-$$Throughput = Number of Records / Execution Time$$
+$$Throughput = Number\_of\_Records / Execution\_Time$$
 
 This process is **repeated five times**, and the **average values** of the metrics are calculated for a comprehensive assessment of Hadoop’s performance.
 
