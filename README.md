@@ -8,9 +8,15 @@ In contrast, [Apache Spark](https://spark.apache.org/) is a fast cluster computi
 
 ## Methodology
 
-We aim to compare the performance of Hadoop and Spark frameworks in processing a food security CSV file that has been loaded into the Hadoop Distributed File System (HDFS). Three Java programs are compiled into JAR files and executed through the command line interface, and three scala scripts are being runned in the scala CLI. 
+We aim to compare the performance of Hadoop and Spark frameworks in processing a ecommerce CSV file that has been loaded into the Hadoop Distributed File System (HDFS). Three `java` programs are compiled into `jar` files and executed through the command line interface, and three `scala` scripts are being runned in the scala CLI. 
 
-Those built jobs will process the input file and store the output in another file. The queries we perform on both frameworks include determining the total imports by each country, analyzing food stock changes in high-production and export countries, and conducting a word count on the dataset. To evaluate the efficiency, we employ metrics such as execution time, throughput, and memory consumption.
+Those built jobs will process the input file and store the output in another file. The queries we perform on both frameworks are:
+
+1. Determining the total sales of each product category.
+2. Analyzing order count by city.
+3. Conducting a word count on the dataset. 
+
+To evaluate the efficiency, we employ metrics such as execution time, throughput, and memory consumption.
 
 $$Throughput = Number of Records / Execution Time$$
 
@@ -44,3 +50,4 @@ cd WIH3003_UM
 1. Store the dataset in Hadoop Distributed File System (HDFS).
 2. For Hadoop, compile the `java` file in the respective folder into a `jar` file, then execute it on the dataset.
 3. For Spark, go into the `spark` CLI, copy the `spark` file in the respective folder and execute the commands line by line.
+4. Repeat Step 2 and Step 3 each for 5 times, note down the performance metrics after every execution for comparison analysis.
